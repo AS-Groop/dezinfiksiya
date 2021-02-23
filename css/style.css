@@ -735,3 +735,40 @@ header{
 .img-news img{
   width: 100%;
 }
+.phone__number{
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+  z-index: 9999;
+  background-color: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.phone__number a{
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 33px;
+  position: relative;
+}
+.phone__number a:before{
+  content: "\f095";
+  left: 3px;
+  position: absolute;
+  color: #ffc222;
+  font-family: 'icomoon';
+  font-size: 26px;
+  animation: zoomOutIn01 7s linear infinite;
+}
+@keyframes zoomOutIn01{
+	0%,100%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.7);
+	}
+}
